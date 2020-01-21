@@ -103,7 +103,7 @@ namespace WindowsFormsApp1
                 Console.WriteLine(finale);
                 added = 0;
             }
-            if (Decimal == 1) // todo: how the fuck decimals work - cant put in string, c# wont understand
+            if (Decimal == 1) // todo: how the fuck decimals work - cant put in string, c# wont understand, learn how 2 strings do shit
             {
                 Console.WriteLine("=");
                 textBox1.Text = textBox1.Text + "=";
