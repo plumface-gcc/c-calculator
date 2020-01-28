@@ -301,75 +301,86 @@ namespace WindowsFormsApp1
 
         private void button12_Click(object sender, EventArgs e)
         {
-            added = 1;
-            subtracted = 0;
-            divided = 0;
-            multiplied = 0;
-            Decimal = 0;
-            percent = 0;
-            Console.WriteLine("+");
-            textBox1.Text = textBox1.Text + "+";
+            if (operatorCheck == 0)
+            {
+                added = 1;
+                subtracted = 0;
+                divided = 0;
+                multiplied = 0;
+                Decimal = 0;
+                percent = 0;
+                operatorCheck = 1;
+                Console.WriteLine("+");
+                textBox1.Text = textBox1.Text + "+";
+            }
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            added = 0;
-            subtracted = 1;
-            divided = 0;
-            multiplied = 0;
-            operatorCheck = 1;
-            Decimal = 0;
-            percent = 0;
-            Console.WriteLine("-");
-            textBox1.Text = textBox1.Text + "-";
+            if (operatorCheck == 0)
+            {
+                added = 0;
+                subtracted = 1;
+                divided = 0;
+                multiplied = 0;
+                operatorCheck = 1;
+                Decimal = 0;
+                percent = 0;
+                Console.WriteLine("-");
+                textBox1.Text = textBox1.Text + "-";
+            }
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            added = 0;
-            subtracted = 0;
-            divided = 0;
-            multiplied = 1;
-            Decimal = 0;
-            percent = 0;
-            Console.WriteLine("*");
-            textBox1.Text = textBox1.Text + "*";
+            if (operatorCheck == 0)
+            {
+                added = 0;
+                subtracted = 0;
+                divided = 0;
+                multiplied = 1;
+                operatorCheck = 1;
+                Decimal = 0;
+                percent = 0;
+                Console.WriteLine("*");
+                textBox1.Text = textBox1.Text + "*";
+            }
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
-            added = 0;
-            subtracted = 0;
-            divided = 1;
-            multiplied = 0;
-            Decimal = 0;
-            percent = 0;
-            Console.WriteLine("/");
-            textBox1.Text = textBox1.Text + "/";
+            if (operatorCheck == 0)
+            {
+                added = 0;
+                subtracted = 0;
+                divided = 1;
+                multiplied = 0;
+                Decimal = 0;
+                percent = 0;
+                Console.WriteLine("/");
+                textBox1.Text = textBox1.Text + "/";
+            }
         }
 
         private void button15_Click(object sender, EventArgs e) //decimal
         {
-            added = 0;
-            subtracted = 0;
-            divided = 0;
-            multiplied = 0;
-            Decimal = 1;
-            percent = 0;
-            Console.WriteLine(".");
-            textBox1.Text = textBox1.Text + ".";
+            if (operatorCheck == 0)
+            {
+                added = 0;
+                subtracted = 0;
+                divided = 0;
+                multiplied = 0;
+                operatorCheck = 1;
+                Decimal = 1;
+                percent = 0;
+                Console.WriteLine(".");
+                textBox1.Text = textBox1.Text + ".";
+            }
         }
 
         private void button17_Click(object sender, EventArgs e) //percent
         {
-            added = 0;
-            subtracted = 0;
-            divided = 0;
-            multiplied = 0;
-            Decimal = 0;
-            percent = 1;
-            Console.WriteLine("%");
-            textBox1.Text = textBox1.Text + "%";
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -379,14 +390,18 @@ namespace WindowsFormsApp1
 
         private void button17_Click_1(object sender, EventArgs e)
         {
-            added = 0;
-            subtracted = 0;
-            divided = 0;
-            multiplied = 0;
-            Decimal = 0;
-            percent = 1;
-            Console.WriteLine("%");
-            textBox1.Text = textBox1.Text + "%";
+            if (operatorCheck == 0)
+            {
+                added = 0;
+                subtracted = 0;
+                divided = 0;
+                multiplied = 0;
+                Decimal = 0;
+                operatorCheck = 1;
+                percent = 1;
+                Console.WriteLine("%");
+                textBox1.Text = textBox1.Text + "%";
+            }
         }
 
         private void button15_Click_1(object sender, EventArgs e)
