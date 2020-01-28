@@ -68,7 +68,7 @@ namespace WindowsFormsApp1
                 finale = finalClicked1 + finalClicked2;
                 Console.WriteLine(finale);
                 textBox1.Text = textBox1.Text + finale;
-                subtracted = 0;
+                added = 0;
             }
             if (subtracted == 1)
             {
@@ -79,7 +79,7 @@ namespace WindowsFormsApp1
                 finale = finalClicked1 - finalClicked2;
                 textBox1.Text = textBox1.Text + finale;
                 Console.WriteLine(finale);
-                divided = 0;
+                subtracted = 0;
             }
             if (divided == 1)
             {
@@ -90,7 +90,7 @@ namespace WindowsFormsApp1
                 finale = finalClicked1 / finalClicked2;
                 textBox1.Text = textBox1.Text + finale;
                 Console.WriteLine(finale);
-                multiplied = 0;
+                divided = 0;
             }
             if (multiplied == 1)
             {
@@ -101,7 +101,7 @@ namespace WindowsFormsApp1
                 finale = finalClicked1 * finalClicked2;
                 textBox1.Text = textBox1.Text + finale;
                 Console.WriteLine(finale);
-                added = 0;
+                multiplied = 0;
             }
             if (Decimal == 1) // todo: how the fuck decimals work - cant put in string, c# wont understand, learn how 2 strings do shit
             {
@@ -118,7 +118,7 @@ namespace WindowsFormsApp1
                 decimal finale = pValue * finalClicked2;
                 textBox1.Text = textBox1.Text + finale;
                 Console.WriteLine(finale);
-                Decimal = 0;
+                percent = 0;
             }
             
         }
