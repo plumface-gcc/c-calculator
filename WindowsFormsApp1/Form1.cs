@@ -29,6 +29,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             textBox1.ReadOnly = true;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
         }
 
         private void Form1_Load(object sender, EventArgs e)
